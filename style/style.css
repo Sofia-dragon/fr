@@ -1,8 +1,9 @@
-
 html{
+  height: 100%;
     box-sizing: border-box;
 }
 body{
+  height: 100%;
   margin: 0;
   padding: 14px;
   text-align: center;
@@ -15,44 +16,17 @@ h1{
 p{
   margin: 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 /*header*/
-.svg-menu{
-  display: block;
-  position: relative;
-  margin-left: 257px;
-  margin-top: 10px;
-  width: 33px;
-  height: 19px;
-}
-.britlex-header{
-  z-index: 5;
-}
 .header{
   position: fixed;
-  padding-left: 14px;
-  padding-top: 36px;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 10;
 }
 .header::before{
   content: ''; 
@@ -62,207 +36,155 @@ ul {
   width: 100%;
   height: 100%;
   background: #F5F5F5;
-  z-index: 3;
+  z-index: 2;
 }
-.header div{
+.header_boby{
   position: relative;
   display: flex;
-  height: 36px;
+  min-height: 36px;
+  margin: 36px 15px 0 14px;
   align-items: center;
-  justify-content: center;
 }
-.nav-menu{
+.container{
+  min-width: 320px;
+  align-items: center;
+  margin: 0 auto;
+}
+.heder_list{
   display: none;
   gap: 31px;
   position: relative;
   z-index: 2;
 }
-.link{
+.heder_list li{
+  list-style: none;
+}
+.header_burger{
+  display: block;
+  position: relative;
+  text-align: end;
+  max-width: 33px;
+  height: 19px;
+  z-index: 3;
+}
+.heder_link{
   display: block;
   font-size: 16px;
   line-height: 24px;
+  align-items: center;
   color: #263238;
   text-decoration: none;
-  margin-left: 39px;
+  z-index: 3px;
 }
-.button-let’s-talk{ 
-  display: none;
-  width: 160px;
-  height: 50px;
-  border: 2px solid #263238;
-  margin: 0;
-}
-.button-let’s-talk p{
-  color: #000000;
-  font-size: 18px;
-  line-height: 27px;
-}
-/*main*/
-main{
-  padding-top: 80px;
-}
-h1{
+.britlex-header{
+  position: relative;
+  align-items: start;
   font-size: 24px;
-  text-align: center;
-}
-.Learn h1{
-  margin-bottom: 20px;
-}
-.Learn>p{
-  margin-bottom: 33px;
-}
-p{
-  color: #8F95A5;
-}
-.button{
-  border-radius: 5px;
-}
-.button-get_started{
-  display: block;
-  background: #263238;
-  width: 289px;
-  height: 60px;
-  margin: 0 auto;
-  margin-bottom: 55px;
-}
-.button-p{
-  color:#ffffff;
-}
-/*Skills*/
-.Skills{
-  margin-bottom: 32px;
-}
-.Skills-ul{
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-  margin-bottom: 50px;
-}
-.SWRL{
-  width: 290px;
-  max-height: 600px;
-  min-height: 473px;
-  padding: 13px;
-  background: #E5E5E5;
-  border-radius: 5px;
-  margin: 0 auto;
-}
-.button-learn_more{
-  background: #263238;
-  padding: 14px 43px;
-  margin-left: 3px;
-}
-/*About Us*/
-.About>svg{
-  margin-bottom: 23px;
-}
-.pupils{
-  color: #2A3246;
-}
-/*Pricing*/
-.Pricing{
-  text-align: center;
-}
-.button-price{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 37px;
-  border: 0;
-  background: #EEEEEE;
-  border-radius: 5px;
-  margin: 0 auto;
-}
-.price{
-  font-size: 18px;
-  color: #263238;
-}
-/*Contact Us*/
-.button-E-mail{
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #8F95A5;
-  border-radius: 5px;
-  color: #8F95A5;
-  width: 291px;
-  height: 50px;
-  padding-left:  41px;
-  text-align: left;
-  margin-bottom: 17px;
-}
-.button-Subscribe{
-  display: block;
-  margin: 0 auto;
-  width: 290px;
-  height: 60px;
-  background: #263238;
-  margin-bottom: 55px;
-}
-/*footer*/
-footer{
-  border-top: solid 1px #C4C4C4;
-}
-.britlex-footer{
-  margin: 0 auto;
-}
-.p-footer{
-  text-align: center;
-  font-size: 11px;
-}
-/**/
-.britlex{
-  font-size: 24px;
-  width: 71px;
-  height: 36px;
   line-height: 36px;
+  margin-right: auto;
+  z-index: 3;
 }
 .lex{
   color: #939393;
-} 
-/*адаптив*/
-@media (min-width:320px){
-  
+}
+.button-let’s-talk{
+  display: none;
+  min-width: 160px;
+  min-height: 50px;
+  border: 2px solid #263238;
+  background: #F5F5F5;
+  border-radius: 5px;
+}
+main{
+  padding: 36px;
 }
 @media (min-width:575px){
-  .header::before{
-    height: 105px;
+  .container{
+    min-width: 494px;
   }
   .britlex-header{
-    width: 89px;
-    height: 45px;
     font-size: 30px;
     line-height: 45px;
   }
-  .svg-menu{
-    display: block;
-    margin-left: 571px;
-    position: relative;
-    z-index: 3;
-  }
-  .nav-menu{
-    display: block;
-    text-align: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-    padding-top: 141px;
-  }
-  .nav-menu-item .link{
-    font-size: 22px;
-    line-height: 60px;
-    color: #263238;
-  }
-  header>div{
-    border-bottom: 1px solid #C4C4C4;
+  .header_boby{
+    min-height: 45px;
+    margin: 39px 49px 0 32px;
   }
 }
 @media (min-width:768px){
-  
+  .container{
+    min-width: 690px;
+    margin: 0 auto;
+  }
+  .britlex-header{
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .header_boby{
+    margin: 39px 39px 0;
+    min-width: 690px;
+  }
 }
 @media (min-width:992px){
-  
+  .container{
+    min-width: 930px;
+    margin: 0 31px;
+  }
+  .header_boby{
+    height: 70px;
+    margin-top: 25px;
+    margin: 0;
+  }
+  .britlex-header{
+    margin-right: 17.5%;
+  }
+  .svg-menu{
+    display: none;
+  }
+  .header_burger{
+    height: 0;
+    width: 0;
+  }
+  .heder_list{
+    display: flex;
+  }
+  .button-let’s-talk{
+    margin-left: 10.76%;
+    display: block;
+    z-index: 3;
+  }
+}
+@media (min-width:1600px){
+  .container{
+    min-width: 1338px;
+  }
+  .header_boby{
+    min-height: 70px;
+    margin-top: 55px;
+  }
+  .britlex-header{
+    margin-right: 15%;
+    font-size: 36px;
+    line-height: 54px;
+  }  
+  .button-let’s-talk{
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 312px;
+    min-height: 70px;
+    border-radius: 10px;
+    margin: 0;
+    margin-left: 8%;
+  }
+  .heder_menu{
+    min-height: 30px;
+  }
+  .heder_list{
+    gap: 50px;
+  }
+  .heder_link{
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
