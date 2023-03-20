@@ -36,8 +36,6 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-bottom: 20px;
-  border-bottom: #C4C4C4 solid 1px;
   background: #F5F5F5;
   z-index: 2;
 }
@@ -45,21 +43,13 @@ ul {
   position: relative;
   display: flex;
   min-height: 36px;
-  margin: 25px 15px 0 14px;
+  margin: 36px 15px 0 14px;
   align-items: center;
 }
 .container{
   max-width: 320px;
   align-items: center;
   margin: 0 auto;
-}
-.heder_menu{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #da2c2c;
 }
 .heder_list{
   display: none;
@@ -70,14 +60,19 @@ ul {
 }
 .heder_list li{
   list-style: none;
+  font-weight: 500;
 }
 .header_burger{
   display: block;
   position: relative;
   text-align: end;
-  max-width: 33px;
+  width: 33px;
   height: 19px;
   z-index: 3;
+}
+.svg-menu{
+  width: 100%;
+  height: 100%;
 }
 .heder_link{
   display: block;
@@ -124,12 +119,20 @@ main{
     font-size: 30px;
     line-height: 45px;
   }
+  .header_burger{
+    width: 42px;
+    height: 45px;
+  }
   .header_boby{
     min-height: 45px;
     margin: 39px 49px 0 32px;
   }
 }
 @media (min-width:768px){
+  .header_burger{
+    width: 30px;
+    height: 17px;
+  }
   .container{
     max-width: 690px;
     margin: 0 auto;
@@ -139,7 +142,7 @@ main{
     line-height: 45px;
   }
   .header_boby{
-    margin: 39px 39px 0;
+    margin: 39px 0 0;
   }
 }
 @media (min-width:992px){
@@ -166,6 +169,8 @@ main{
 
   }
   .button-let’s-talk{
+    font-size: 18px;
+    line-height: 27px;
     display: block;
     z-index: 3;
   }
