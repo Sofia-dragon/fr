@@ -1,3 +1,4 @@
+
 html{
   height: 100%;
     box-sizing: border-box;
@@ -35,6 +36,8 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 20px;
+  border-bottom: #C4C4C4 solid 1px;
   background: #F5F5F5;
   z-index: 2;
 }
@@ -42,17 +45,26 @@ ul {
   position: relative;
   display: flex;
   min-height: 36px;
-  margin: 36px 15px 0 14px;
+  margin: 25px 15px 0 14px;
   align-items: center;
 }
 .container{
-  min-width: 320px;
+  max-width: 320px;
   align-items: center;
   margin: 0 auto;
+}
+.heder_menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #da2c2c;
 }
 .heder_list{
   display: none;
   gap: 31px;
+  width: 414px;
   position: relative;
   z-index: 2;
 }
@@ -94,13 +106,19 @@ ul {
   border: 2px solid #263238;
   background: #F5F5F5;
   border-radius: 5px;
+  margin-left: 100px;
 }
 main{
   padding: 36px;
 }
+
+
+
+
+
 @media (min-width:575px){
   .container{
-    min-width: 494px;
+    max-width: 494px;
   }
   .britlex-header{
     font-size: 30px;
@@ -113,7 +131,7 @@ main{
 }
 @media (min-width:768px){
   .container{
-    min-width: 690px;
+    max-width: 690px;
     margin: 0 auto;
   }
   .britlex-header{
@@ -122,21 +140,19 @@ main{
   }
   .header_boby{
     margin: 39px 39px 0;
-    min-width: 690px;
   }
 }
 @media (min-width:992px){
   .container{
-    min-width: 930px;
-    margin: 0 31px;
+    max-width: 930px;
   }
   .header_boby{
     height: 70px;
-    margin-top: 25px;
     margin: 0;
+    margin-top: 25px;
   }
   .britlex-header{
-    margin-right: 17.5%;
+    margin-right: 167px;
   }
   .svg-menu{
     display: none;
@@ -147,23 +163,23 @@ main{
   }
   .heder_list{
     display: flex;
+
   }
   .button-let’s-talk{
-    margin-left: 10.76%;
     display: block;
     z-index: 3;
   }
 }
 @media (min-width:1600px){
   .container{
-    min-width: 1338px;
+    max-width: 1338px;
   }
   .header_boby{
     min-height: 70px;
     margin-top: 55px;
   }
   .britlex-header{
-    margin-right: 15%;
+    margin-right: 236px;
     font-size: 36px;
     line-height: 54px;
   }  
@@ -174,14 +190,14 @@ main{
     min-width: 312px;
     min-height: 70px;
     border-radius: 10px;
-    margin: 0;
-    margin-left: 8%;
+    margin-left: 121px;
   }
   .heder_menu{
-    min-height: 30px;
+    height: 30px;
   }
   .heder_list{
     gap: 50px;
+    width: 563px;
   }
   .heder_link{
     font-size: 20px;
