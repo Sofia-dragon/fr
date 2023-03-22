@@ -1,7 +1,7 @@
 
 html{
   height: 100%;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
   height: 100%;
@@ -27,26 +27,11 @@ ul {
   width: 100%;
   top: 0;
   left: 0;
+  padding-top: 36px;
   z-index: 10;
 }
-.header::before{
-  content: ''; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #F5F5F5;
-  z-index: 2;
-}
-.header_boby{
-  position: relative;
-  display: flex;
-  min-height: 36px;
-  margin: 36px 15px 0 14px;
-  align-items: center;
-}
 .container{
+  display: flex;
   max-width: 320px;
   align-items: center;
   margin: 0 auto;
@@ -69,10 +54,6 @@ ul {
   width: 33px;
   height: 19px;
   z-index: 3;
-}
-.svg-menu{
-  width: 100%;
-  height: 100%;
 }
 .heder_link{
   display: block;
@@ -123,9 +104,9 @@ main{
     width: 42px;
     height: 45px;
   }
-  .header_boby{
+  .header{
     min-height: 45px;
-    margin: 39px 49px 0 32px;
+    padding-top: 39px;
   }
 }
 @media (min-width:768px){
@@ -141,18 +122,17 @@ main{
     font-size: 30px;
     line-height: 45px;
   }
-  .header_boby{
-    margin: 39px 0 0;
+  .header{
+    padding-top: 39px;
   }
 }
 @media (min-width:992px){
   .container{
     max-width: 930px;
   }
-  .header_boby{
+  .header{
     height: 70px;
-    margin: 0;
-    margin-top: 25px;
+    padding-top: 25px;
   }
   .britlex-header{
     margin-right: 167px;
@@ -179,9 +159,9 @@ main{
   .container{
     max-width: 1338px;
   }
-  .header_boby{
+  .header{
     min-height: 70px;
-    margin-top: 55px;
+    padding-top: 55px;
   }
   .britlex-header{
     margin-right: 236px;
