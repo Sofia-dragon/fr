@@ -12,11 +12,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-                <div class="britlex britlex-header"><a class="brit">Brit</a><a class="lex">lex</a></div>
-                    <svg class="header_burger">
+        <div class="header_container">
+                <div class="britlex britlex-header"><a class="brit">Brit<span class="lex">lex</span></a></div>
+                    <button type="button" class="header_button" data-modal-open><svg class="header_burger">
                         <use href="./images/hedgehog.svg#icon-burger-menu"></use>
-                    </svg>
+                    </svg></button>
                 <nav class="heder_menu">
                     <ul class="heder_list">
                         <li class="nav-menu-item"><a href="" class="heder_link">Home</a></li>
@@ -31,6 +31,28 @@
                 </button>
             </div>
     </header>
+    <div class="modal is-hidden">
+        <span class="modal_container">
+            <div class="britlex britlex-modal"><a class="brit">Brit<span class="lex">lex</span></a></div>
+            <button type="button" class="header_button" data-modal-close>
+                <svg class="header_burger">
+                    <use href="./images/hedgehog.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+        </span>
+        <nav class="modal_menu">
+            <ul class="modal_list">
+                <li class="modal-menu-item"><a href="" class="modal_link">Home</a></li>
+                <li class="modal-menu-item"><a href="" class="modal_link">Skills</a></li>
+                <li class="modal-menu-item"><a href="" class="modal_link">About Us</a></li>
+                <li class="modal-menu-item"><a href="" class="modal_link">Pricing</a></li>
+                <li class="modal-menu-item"><a href="" class="modal_link">Contacts</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="button button-let’s-talk-modal">
+            <p>Let’s Talk</p>
+        </button>
+    </div>
     <script src="./modal.js"></script>
 </body>
 </html>

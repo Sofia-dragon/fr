@@ -6,7 +6,6 @@ html{
 body{
   height: 100%;
   margin: 0;
-  padding: 14px;
   text-align: center;
   background: #F5F5F5;
   font-family: 'Poppins', sans-serif;
@@ -21,6 +20,15 @@ ul {
   margin: 0;
   padding: 0;
 }
+li{
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+.modal{
+  background-color: #F5F5F5;
+  padding-left: 15px;
+}
 /*header*/
 .header{
   position: fixed;
@@ -28,11 +36,10 @@ ul {
   top: 0;
   left: 0;
   padding-top: 36px;
-  z-index: 10;
 }
-.container{
+.header_container{
   display: flex;
-  max-width: 320px;
+  max-width: 290px;
   align-items: center;
   margin: 0 auto;
 }
@@ -41,11 +48,6 @@ ul {
   gap: 31px;
   width: 414px;
   position: relative;
-  z-index: 2;
-}
-.heder_list li{
-  list-style: none;
-  font-weight: 500;
 }
 .header_burger{
   display: block;
@@ -53,7 +55,23 @@ ul {
   text-align: end;
   width: 33px;
   height: 19px;
-  z-index: 3;
+}
+.header_button{
+  background: #F5F5F5;
+  border: 0;
+}
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .heder_link{
   display: block;
@@ -62,7 +80,6 @@ ul {
   align-items: center;
   color: #263238;
   text-decoration: none;
-  z-index: 3px;
 }
 .britlex-header{
   position: relative;
@@ -70,7 +87,6 @@ ul {
   font-size: 24px;
   line-height: 36px;
   margin-right: auto;
-  z-index: 3;
 }
 .lex{
   color: #939393;
@@ -87,13 +103,44 @@ ul {
 main{
   padding: 36px;
 }
-
+.modal_container{
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 0;
+  border-bottom: 1px solid#C4C4C4;
+  height: 81px;
+}
+.britlex-modal{
+  position: relative;
+  align-items: start;
+  font-size: 24px;
+  line-height: 36px;
+  margin-right: auto;
+}
+.modal_menu{
+  text-align: left;
+  color: #263238;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 65px;
+  margin-bottom: 69px;
+}
+.button-let’s-talk-modal{
+  width: 291px;
+  height: 65px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  border: 2px solid #263238;
+  background: #F5F5F5;
+  border-radius: 5px;
+}
 
 
 
 
 @media (min-width:575px){
-  .container{
+  .header_container{
     max-width: 494px;
   }
   .britlex-header{
@@ -108,13 +155,22 @@ main{
     min-height: 45px;
     padding-top: 39px;
   }
+  .modal{
+    padding-left: 33px;
+  }
+  .button-let’s-talk-modal{
+  width: 330px;
+  height: 70px;
+  font-size: 22px;
+  line-height: 33px;  
+  }
 }
 @media (min-width:768px){
   .header_burger{
     width: 30px;
     height: 17px;
   }
-  .container{
+  .header_container{
     max-width: 690px;
     margin: 0 auto;
   }
@@ -125,9 +181,15 @@ main{
   .header{
     padding-top: 39px;
   }
+  .button-let’s-talk-modal{
+  width: 210px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 27px;
+  }
 }
 @media (min-width:992px){
-  .container{
+  .header_container{
     max-width: 930px;
   }
   .header{
@@ -152,11 +214,10 @@ main{
     font-size: 18px;
     line-height: 27px;
     display: block;
-    z-index: 3;
   }
 }
 @media (min-width:1600px){
-  .container{
+  .header_container{
     max-width: 1338px;
   }
   .header{
@@ -188,4 +249,43 @@ main{
     font-size: 20px;
     line-height: 30px;
   }
+}
+/*
+body{
+  background: #FFFFFF;
+}
+.header{
+  border: 1px solid#C4C4C4;
+  height: 81px;
+}
+.heder_menu{
+  display: block;
+  margin-bottom: 69px;
+
+.button-let’s-talk{
+  border: 2px solid #263238;
+  border-radius: 5px;
+  width: 291px;
+  height: 65px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+/*
+.header{
+  height: 137px;
+}
+.britlex-header{
+
+}
+.heder_menu{
+  position: absolute;
+  left: 33px;
+  top: 173px;
+  font-size: 24px;
+  line-height: 65px;
+  margin-bottom: 80px;
+  width: 330px;
+  height: 70px;
 }
