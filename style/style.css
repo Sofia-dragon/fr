@@ -24,16 +24,7 @@ li{
   list-style: none;
   font-weight: 500;
 }
-.modal{
-  position: relative;
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  background-color: #F5F5F5;
-  padding: 20px 15px 0;
-  padding-top: 20px;
-  padding-left: 15px;
-}
+
 /*header*/
 .header{
   position: fixed;
@@ -41,6 +32,7 @@ li{
   top: 0;
   left: 0;
   padding-top: 36px;
+  margin-bottom: 29px;
 }
 .header_container{
   display: flex;
@@ -104,9 +96,15 @@ li{
   background: #F5F5F5;
   border-radius: 5px;
   margin-left: 100px;
-}
-main{
-  padding: 36px;
+} 
+/*modal*/
+.modal{
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  padding: 20px 15px;
 }
 .britlex-modal{
   position: relative;
@@ -116,10 +114,13 @@ main{
 }
 .modal_button{
   position: absolute;
+  top: 25px;
+  right: 7px;
   background: #F5F5F5;
   border: 0;
   width: 34px;
   height: 34px;
+  padding: 0;
 }
 .modal_menu::before{
   content: "";
@@ -127,7 +128,7 @@ main{
   left: 15px;
   top: 81px;
   height: 1px;
-  width: 92%;
+  width: 95%;
   background-color: #c4c4c4;
 }
 .modal_burger{
@@ -159,10 +160,29 @@ main{
   background: #F5F5F5;
   border-radius: 5px;
 }
+/*hero*/
+.hero{
+  margin-top: 101px;
+}
+.heroTitle{
+  text-align: center;
+  margin: 0 auto;
+  width: 220px;
+  height: 72px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.heroParagraph{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #8F95A5;
+}
 
 
-
-
+/*адаптив*/
 @media (min-width:575px){
   .header_container{
     max-width: 494px;
@@ -189,6 +209,8 @@ main{
     line-height: 45px;
   }
   .modal_button{
+    top: 54px;
+    right: 23px;
     width: 39px;
     height: 39px;
   }
@@ -197,6 +219,7 @@ main{
     height: 19px;
   }
   .modal_menu::before{
+    width: 92%;
     left: 33px;
     top: 137px;
   }
@@ -260,6 +283,9 @@ main{
     font-size: 22px;
     line-height: 60px;
     margin-bottom: 62px;
+  }
+  .modal_menu::before{
+    width: 87%;
   }
   .button-let’s-talk-modal{
     width: 210px;
@@ -328,43 +354,4 @@ main{
     font-size: 20px;
     line-height: 30px;
   }
-}
-/*
-body{
-  background: #FFFFFF;
-}
-.header{
-  border: 1px solid#C4C4C4;
-  height: 81px;
-}
-.heder_menu{
-  display: block;
-  margin-bottom: 69px;
-
-.button-let’s-talk{
-  border: 2px solid #263238;
-  border-radius: 5px;
-  width: 291px;
-  height: 65px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #000000;
-}
-/*
-.header{
-  height: 137px;
-}
-.britlex-header{
-
-}
-.heder_menu{
-  position: absolute;
-  left: 33px;
-  top: 173px;
-  font-size: 24px;
-  line-height: 65px;
-  margin-bottom: 80px;
-  width: 330px;
-  height: 70px;
 }
