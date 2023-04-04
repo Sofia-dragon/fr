@@ -56,8 +56,69 @@
         </div>
         <main>
             <section class="hero">
+                <div class="hero-container">
+                <picture>
+                    <source
+                        srcset="
+                        ./images/portfolio/protfolio1-mob-396.webp  1x,
+                        ./images/portfolio/protfolio1-mob-792.webp  2x,
+                        ./images/portfolio/protfolio1-mob-1188.webp 3x
+                        "
+                        type="image/webp"
+                        media="(max-width: 767px)"
+                    />
+                    <source
+                        srcset="
+                        ./images/portfolio/protfolio1-mob-396.jpg  1x,
+                        ./images/portfolio/protfolio1-mob-792.jpg  2x,
+                        ./images/portfolio/protfolio1-mob-1188.jpg 3x
+                        "
+                        media="(max-width: 767px)"
+                    />
+                    <source
+                        srcset="
+                        ./images/portfolio/protfolio1-tablet-356.webp  1x,
+                        ./images/portfolio/protfolio1-tablet-712.webp  2x,
+                        ./images/portfolio/protfolio1-tablet-1068.webp 3x
+                        "
+                        media="(min-width: 768px) and (max-width:1199px)"
+                    />
+                    <source
+                        srcset="
+                        ./images/portfolio/protfolio1-tablet-356.jpg  1x,
+                        ./images/portfolio/protfolio1-tablet-712.jpg  2x,
+                        ./images/portfolio/protfolio1-tablet-1068.jpg 3x
+                        "
+                        media="(min-width: 768px) and (max-width:1199px)"
+                    />
+                    <source
+                        srcset="
+                        ./images/portfolio/protfolio1-desktop-360.webp  1x,
+                        ./images/portfolio/protfolio1-desktop-720.webp  2x,
+                        ./images/portfolio/protfolio1-desktop-1080.webp 3x
+                        "
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                        ./images/portfolio/protfolio1-desktop-360.jpg  1x,
+                        ./images/portfolio/protfolio1-desktop-720.jpg  2x,
+                        ./images/portfolio/protfolio1-desktop-1080.jpg 3x
+                        "
+                        media="(min-width: 1200px) "
+                    />
+                    <img
+                        class="portfolio-projects-item-link-thumb-img"
+                        src="./images/portfolio/protfolio1-mob-396.jpg"
+                        alt="project photo"
+                        width="394"
+                        height="278"
+                    />
+                </picture>
                 <h2 class="heroTitle">Learn Any Foreign Language</h2>
-                <p class="heroParagraph">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
+                <p class="heroP">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
+                <button type="button" class="button-get-started"><p>Get started</p></button>
+                </div>
             </section>
         </main>
         <script src="./modal.js"></script>
