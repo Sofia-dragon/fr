@@ -7,7 +7,7 @@ body{
   height: 100%;
   margin: 0;
   text-align: center;
-  background: #F5F5F5;
+  background: #FFFFFF;
   font-family: 'Poppins', sans-serif;
 }
 h1{
@@ -170,6 +170,7 @@ button{
 .hero-container{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: 299px;
   height: 563px;
@@ -195,6 +196,8 @@ button{
   color: #8F95A5;
 }
 .button-get-started{
+  display: block;
+  margin: 0 auto;
   width: 289px;
   height: 60px;
   background: #263238;
@@ -204,7 +207,11 @@ button{
   line-height: 24px;
   color: #FFFFFF;
 }
-
+.hero-picture{
+  margin: 0 auto;
+  width: 299px;
+  height: 299px;
+}
 /*адаптив*/
 @media (min-width:575px){
   .header_container{
@@ -261,6 +268,10 @@ button{
   .hero-container{
     width: 491px;
     height: 672px;
+  }
+  .hero-picture{
+    width: 424px;
+    height: 424px;
   }
   .heroTitle{
     font-weight: 600;
@@ -343,8 +354,13 @@ button{
     line-height: 27px;
   }
   .hero-container{
+    flex-direction: row-reverse;
     width: 712px;
     height: 357px;
+  }
+  .hero-picture{
+    width: 352px;
+    height: 352px;
   }
   .heroTitle{
     margin: 0;
@@ -367,6 +383,7 @@ button{
     text-align: left;
   }
   .button-get-started{
+    margin: 0;
     width: 236px;
     height: 65px;
     font-weight: 400;
@@ -400,6 +417,10 @@ button{
   }
   .hero-container{
     width: 942px;
+    height: 460px;
+  }
+  .hero-picture{
+    width: 460px;
     height: 460px;
   }
   .heroTitle{
@@ -455,6 +476,14 @@ button{
   .heder_link{
     font-size: 20px;
     line-height: 30px;
+  }
+  .hero-container{
+    width: 1338px;
+    height: 548px;
+  }
+  .hero-picture{
+    width: 654px;
+    height: 510px;
   }
   .heroTitle{
     width: 386px;
