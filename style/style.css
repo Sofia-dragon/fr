@@ -216,7 +216,7 @@ button{
 .heroTitle::after {
   content: '';
   display: none;
-  background-image: url(../images/lamp.svg);
+  background-position: center;
 }
 
 /*адаптив*/
@@ -372,7 +372,8 @@ button{
   .heroTitle::after{
     display: block;
     position: absolute;
-    top: 59px;
+    background-image: url(../images/lamp3.svg);
+    top: 70px;
     left: 236px;
     width: 51px;
     height: 51px;
@@ -439,9 +440,10 @@ button{
     height: 460px;
   }
   .heroTitle::after{
+    background-image: url(../images/lamp2.svg);
     width: 59px;
     height: 59px;
-    top: 90px;
+    top: 110px;
     left: 307px;
   }
   .heroTitle{
@@ -507,10 +509,11 @@ button{
     height: 510px;
   }
   .heroTitle::after{
-    width: 85px;
-    height: 85px;
+    background-image: url(../images/lamp.svg);
+    width: 86px;
+    height: 86px;
     left: 400px;
-    top: 140px;
+    top: 120px;
   }
   .heroTitle{
     width: 386px;
