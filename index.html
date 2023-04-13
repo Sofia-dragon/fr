@@ -1,128 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style/style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header_container">
-                    <a class="britlex britlex-header">Brit<span class="lex">lex</span></a>
-                        <button type="button" class="header_button" data-modal-open><svg class="header_burger">
-                            <use href="./images/hedgehog.svg#icon-burger-menu"></use>
-                        </svg></button>
-                    <nav class="heder_menu">
-                        <ul class="heder_list">
-                            <li class="nav-menu-item"><a href="" class="heder_link">Home</a></li>
-                            <li class="nav-menu-item"><a href="" class="heder_link">Skills</a></li>
-                            <li class="nav-menu-item"><a href="" class="heder_link">About Us</a></li>
-                            <li class="nav-menu-item"><a href="" class="heder_link">Pricing</a></li>
-                            <li class="nav-menu-item"><a href="" class="heder_link">Contacts</a></li>
-                        </ul>
-                    </nav>
-                    <button type="button" class="button button-let’s-talk">
-                        <p>Let’s Talk</p>
-                    </button>
-                </div>
-        </header>
-        <div class="modal-container is-hidden" data-modal>
-            <div class="modal" >
-                    <a class="britlex britlex-modal">Brit<span class="lex">lex</span></a>
-                    <button type="button" class="modal_button" data-modal-close>
-                        <svg class="modal_burger">
-                            <use href="./images/hedgehog.svg#icon-modal-close"></use>
-                        </svg>
-                    </button>
-                <nav class="modal_menu">
-                    <ul class="modal_list">
-                        <li class="modal-menu-item"><a href="" class="modal_link">Home</a></li>
-                        <li class="modal-menu-item"><a href="" class="modal_link">Skills</a></li>
-                        <li class="modal-menu-item"><a href="" class="modal_link">About Us</a></li>
-                        <li class="modal-menu-item"><a href="" class="modal_link">Pricing</a></li>
-                        <li class="modal-menu-item"><a href="" class="modal_link">Contacts</a></li>
-                    </ul>
-                </nav>
-                <button type="button" class="button button-let’s-talk-modal">
-                    <p>Let’s Talk</p>
-                </button>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <a class="britlex britlex-header">Brit<span class="lex">lex</span></a>
+            <button type="button" class="header_button" data-modal-open><svg class="header_burger">
+                    <use href="./images/hedgehog.svg#icon-burger-menu"></use>
+                </svg></button>
+            <nav class="heder_menu">
+                <ul class="heder_list">
+                    <li class="nav-menu-item"><a href="" class="heder_link">Home</a></li>
+                    <li class="nav-menu-item"><a href="" class="heder_link">Skills</a></li>
+                    <li class="nav-menu-item"><a href="" class="heder_link">About Us</a></li>
+                    <li class="nav-menu-item"><a href="" class="heder_link">Pricing</a></li>
+                    <li class="nav-menu-item"><a href="" class="heder_link">Contacts</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="button button-let’s-talk">
+                <p>Let’s Talk</p>
+            </button>
         </div>
-        <main>
-            <section class="hero">
-                <div class="hero-container">
-                    <div class="hero-picture">
-                        <picture>
-                            <source srcset="
+    </header>
+    <div class="modal-container is-hidden" data-modal>
+        <div class="modal">
+            <a class="britlex britlex-modal">Brit<span class="lex">lex</span></a>
+            <button type="button" class="modal_button" data-modal-close>
+                <svg class="modal_burger">
+                    <use href="./images/hedgehog.svg#icon-modal-close"></use>
+                </svg>
+            </button>
+            <nav class="modal_menu">
+                <ul class="modal_list">
+                    <li class="modal-menu-item"><a href="" class="modal_link">Home</a></li>
+                    <li class="modal-menu-item"><a href="" class="modal_link">Skills</a></li>
+                    <li class="modal-menu-item"><a href="" class="modal_link">About Us</a></li>
+                    <li class="modal-menu-item"><a href="" class="modal_link">Pricing</a></li>
+                    <li class="modal-menu-item"><a href="" class="modal_link">Contacts</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="button button-let’s-talk-modal">
+                <p>Let’s Talk</p>
+            </button>
+        </div>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-picture">
+                    <picture>
+                        <source srcset="
                                 ./images/picture/picture320-1x.webp  1x,
                                 ./images/picture/picture320-2x.webp  2x,
                                 ./images/picture/picture320-3x.webp  3x
                                 " type="image/webp" media="(max-width:574px)">
-                            <source srcset="
+                        <source srcset="
                                 ./images/picture/picture320-1x.jpg  1x,
                                 ./images/picture/picture320-2x.jpg  2x,
                                 ./images/picture/picture320-3x.jpg  3x
                                 " media="(max-width:574px)">
-                            <source srcset="
+                        <source srcset="
                                 ./images/picture/picture575-1x.webp  1x,
                                 ./images/picture/picture575-2x.webp  2x,
                                 ./images/picture/picture575-3x.webp  3x
-                                " type="image/webp" 
-                                media="(min-width:575px) and (max-width:767px)">
-                            <source srcset="
+                                " type="image/webp" media="(min-width:575px) and (max-width:767px)">
+                        <source srcset="
                                 ./images/picture/picture575-1x.jpg  1x,
                                 ./images/picture/picture575-2x.jpg  2x,
                                 ./images/picture/picture575-3x.jpg  3x
-                                "
-                                media="(min-width:575px) and (max-width:767px)">
-                            <source srcset="
+                                " media="(min-width:575px) and (max-width:767px)">
+                        <source srcset="
                                 ./images/picture/picture768-1x.webp  1x,
                                 ./images/picture/picture768-2x.webp  2x,
                                 ./images/picture/picture768-3x.webp  3x
-                                " type="image/webp" 
-                                media="(min-width:768px) and (max-width:991px)">
-                            <source srcset="
+                                " type="image/webp" media="(min-width:767px) and (max-width:991px)">
+                        <source srcset="
                                 ./images/picture/picture768-1x.jpg  1x,
                                 ./images/picture/picture768-2x.jpg  2x,
                                 ./images/picture/picture768-3x.jpg  3x
-                                " media="(min-width:768px) and (max-width:991px)">
-                            <source srcset="
+                                " media="(min-width:767px) and (max-width:991px)">
+                        <source srcset="
                                 ./images/picture/picture992-1x.webp  1x,
                                 ./images/picture/picture992-2x.webp  2x,
                                 ./images/picture/picture992-3x.webp  3x
                                 " type="image/webp" media="(min-width:992px) and (max-width:1599px)">
-                            <source srcset="
+                        <source srcset="
                                 ./images/picture/picture992-1x.jpg  1x,
                                 ./images/picture/picture992-2x.jpg  2x,
                                 ./images/picture/picture992-3x.jpg  3x
                                 " media="(min-width:992px) and (max-width:1600px)">
-                            <source srcset="
+                        <source srcset="
                                 ./images/picture/picture1600-1x.webp  1x,
                                 ./images/picture/picture1600-2x.webp  2x,
                                 ./images/picture/picture1600-3x.webp  3x
                                 " type="image/webp" media="(min-width:1600px)">
-                            <source srcset="
+                        <source srcset="
                                 ./images/picture/picture1600-1x.jpg  1x,
                                 ./images/picture/picture1600-2x.jpg  2x,
                                 ./images/picture/picture1600-3x.jpg  3x
                                 " media="(min-width:1600px)">
-                            <img src="./images/picture/picture320-1x.jpg">
-                        </picture>
-                    </div>
-                    <div>
-                        <h2 class="heroTitle">Learn Any Foreign Language</h2>
-                        <p class="heroP">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
-                        <button type="button" class="button-get-started"><p>Get started</p></button>
-                    </div>
+                        <img src="./images/picture/picture320-1x.jpg">
+                    </picture>
                 </div>
-            </section>
-        </main>
-        <script src="./modal.js"></script>
-    </body>
+                <div>
+                    <h2 class="heroTitle">Learn Any Foreign Language</h2>
+                    <p class="heroP">With our teachers who write a program for each student, you will be able to make
+                        your first sketch after the first lesson.</p>
+                    <button type="button" class="button-get-started">
+                        <p>Get started</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="Skills">
+            <h2>Skills</h2>
+            <ul class="list-skills">
+                <li>
+                    <div class="skils-cart">
+                        <svg>
+                            <use href="./images/Speaking.svg#Speaking"></use>
+                        </svg>
+                        <h3>Speaking</h3>
+                        <p class="skils-p">Improve your English skills and confidence. Live classes and interactive lessons online. 20% extra free for a limited time only </p>
+                        <p class="skils-p">Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners.</p>
+                        <button type="button" class="button-Learn-more">Learn more</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="skils-cart">
+                        <svg>
+                            <use href="./images/Writing.svg#Writing"></use>
+                        </svg>
+                        <h3>Writing</h3>
+                        <p class="skils-p">One of the most important and extensive areas of natural science, the science that studies substances, also their composition </p>
+                        <button type="button" class="button-Learn-more">Learn more</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="skils-cart">
+                        <svg>
+                            <use href="./images/Reading.svg#Reading"></use>
+                        </svg>
+                        <h3>Reading</h3>
+                        <p class="skils-p">perception and response actions of the user resulting from the use and or up coming use of the product, system or service</p>
+                        <button type="button" class="button-Learn-more">Learn more</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="skils-cart">
+                        <svg>
+                            <use href="./images/Listening.svg#Listening"></use>
+                        </svg>
+                        <h3>Listening</h3>
+                        <p class="skils-p">Here you can find activities to practise your listening skills. Listening will help you to improve your understanding </p>
+                        <button type="button" class="button-Learn-more">Learn more</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="./modal.js"></script>
+</body>
+
 </html>
