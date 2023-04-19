@@ -10,7 +10,7 @@ body{
   background: #FFFFFF;
   font-family: 'Poppins', sans-serif;
 }
-h1{
+h1,h2,h3,h4,h5,h6,p{
   margin: 0;
 }
 p{
@@ -170,6 +170,9 @@ svg{
   border-radius: 5px;
 }
 /*hero*/
+.hero{
+  margin-bottom: 53px;
+}
 .hero-container{
   display: flex;
   flex-direction: column;
@@ -224,17 +227,89 @@ svg{
   height: 299px;
 }
 /*Skills*/
+.Skills{
+  padding-bottom: 29px;
+}
+.skils-h2{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 80px;
+  margin-bottom: 32px;
+}
+.skils-container{
+  width: 290px;
+  margin: 0 auto;
+}
 .skils-cart{
-  background: #F5F5F5;
+  text-align: left;
   border-radius: 5px;
 }
 .list-skills{
   display: grid;
-  grid-template-columns: 290px;
   row-gap: 21px;
 }
-.skils-p{
+.skils-item{
+  box-sizing: border-box;
+  width: 290px;
+  background: #F5F5F5;
+  padding: 10px 16px 44px 13px;
+  border-radius: 5px;
+}
+.skils-item > div{
+  height: 100%;
+  width: 100%;
+}
+.cart1{
+  padding: 8px 16px 45px;
+  height: 600px;
+}
+.skils-p2{
   margin-bottom: 20px;
+}
+.cart2{
+  padding: 16px 13px 44px;
+  height: 473px;
+}
+.cart2 .skils-p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+.cart3{
+  height: 473px;
+}
+.cart3 .skils-p{
+  margin-bottom: 52px;
+}
+.cart4{
+  height: 473px;
+}
+.cart4 .skils-p{
+  margin-bottom: 75px;
+}
+.cart1svg{
+  width: 213px;
+  height: 213px;
+}
+.cart2svg{
+  width: 204px;
+  height: 204px;
+}
+.cart3svg{
+  width: 236px;
+  height: 157px;
+}
+.cart4svg{
+  width: 232px;
+  height: 154px;
+}
+.skils-item h3{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 80px;
+}
+.skils-p{
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
@@ -247,9 +322,9 @@ svg{
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  border: 0;
   background: #263238;
   border-radius: 5px;
-  margin-bottom: 44px;
 }
 /*адаптив*/
 @media (min-width:575px){
@@ -304,6 +379,9 @@ svg{
     font-size: 22px;
     line-height: 33px; 
   }
+  .hero{
+    margin-bottom: 96px;
+  }
   .hero-container{
     width: 491px;
     height: 672px;
@@ -333,6 +411,78 @@ svg{
     height: 75px;
     font-size: 18px;
     line-height: 27px;
+  }
+  .skils-container{
+    width: 534px;
+  }
+  .list-skills{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 34px;
+    column-gap: 30px;
+  }
+  .skils-item{
+    width: 240px;
+  }
+  .skils-h2{
+    font-size: 30px;
+    line-height: 80px;
+    margin-bottom: 13px;
+  }
+  .skils-cart{
+    height: 534px;
+  }
+  .cart1{
+    padding: 0px 25px 35px 15px;
+    height: 100%;
+  }
+  .cart1 .skils-p2{
+    margin-bottom: 24px;
+  }
+  .cart2{
+    padding: 5px 24px 36px 16px;
+    height: 100%;
+  }
+  .cart2 .skils-p{
+    margin-bottom: 115px;
+  }
+  .cart3{
+    padding: 30px 25px 36px 15px;
+    height: 100%;
+  }
+  .cart3 .skils-p {
+    margin-bottom: 159px;
+  }
+  .cart4{
+    padding: 38px 5px 36px 16px;
+    height: 100%;
+  }
+  .cart4 .skils-p{
+    margin-bottom: 147px;
+  }
+  .skils-p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .cart1svg{
+    width: 185px;
+    height: 185px;
+  }
+  .cart2svg{
+    width: 182px;
+    height: 182px;
+  }
+  .cart3svg{
+    width: 198px;
+    height: 132px;
+  }
+  .cart4svg{
+    width: 206px;
+    height: 137px;
+  }
+  .button-Learn-more{
+    width: 200px;
+    height: 50px;  
   }
 }
 @media (min-width:768px){
@@ -392,6 +542,9 @@ svg{
     font-size: 18px;
     line-height: 27px;
   }
+  .hero{
+    margin-bottom: 56px;
+  }
   .hero-container{
     flex-direction: row-reverse;
     width: 712px;
@@ -436,6 +589,102 @@ svg{
     height: 65px;
     font-weight: 400;
   }
+  .skils-container{
+    width: 698px;
+  }
+  .list-skills{
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 442px 210px;
+    grid-template-areas: "Speaking Writing Reading" "Speaking Listening Listening";
+    gap: 10px;
+  }
+  .skils-item{
+    padding: 0 10px;
+  }
+  .skils-h2{
+    margin-bottom: 37px;
+  }
+  .skils-item h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 80px;
+  }
+  .skils-p{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .cart1{
+    width: 224px;
+    height: 662px;
+    padding: 31px 10px 37px 17px;
+    grid-area: Speaking;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .cart1 .skils-p2{
+    margin-bottom: 55px;
+  }
+  .cart2{
+    width: 227px;
+    height: 441px;
+    padding: 14px 20px 27px 16px;
+    grid-area: Writing;
+  }
+  .cart2 .skils-h2{
+    margin-top: -60px;
+  }
+  .cart2 .skils-p{
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 40px;
+  }
+  .cart2svg{
+    margin-left: -13px;
+    margin-bottom: -32px;
+  }
+  .cart3{
+    width: 228px;
+    height: 442px;
+    padding: 34px 29px 28px 21px;
+    grid-area: Reading;
+  }
+  .cart3 .skils-p {
+    margin-top: -20px;
+    margin-bottom: 48px;
+  }
+  .cart3svg{
+    margin-bottom: -10px;
+    margin-left: -20px;
+  }
+  .cart4{
+    padding: 0 0 26px 21px;
+    width: 462px;
+    height: 210px;
+    grid-area: Listening;
+  }
+  .cart4 div{
+    margin-top: -3px;
+  }
+  .cart4 .skils-cart{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .cart4 .skils-p{
+    width: 259px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+  .cart4svg{
+    
+    margin-top: 59px;
+    width: 202px;
+    height: 134px;
+  }
+  .button-Learn-more{
+    width: 178px;
+    height: 50px;
+  }
 }
 @media (min-width:992px){
   .header_container{
@@ -462,6 +711,9 @@ svg{
     font-size: 18px;
     line-height: 27px;
     display: block;
+  }
+  .hero{
+    margin-bottom: 72px;
   }
   .hero-container{
     width: 942px;
@@ -498,6 +750,36 @@ svg{
     font-size: 24px;
     line-height: 36px;
   }
+  .skils-container{
+    width: 934px;
+  }
+  .Skills{
+    font-size: 36px;
+  }
+  .list-skills{
+    grid-template-rows: 442px 241px;
+    gap: 10px;
+  }
+  .skils-h2{
+    font-size: 36px;
+    margin-bottom: 53px;
+  }
+  .cart1{
+    width: 303px;
+    height: 696px;
+  }
+  .cart2{
+    width: 302px;
+    height: 441px;
+  }
+  .cart3{
+    width: 304px;
+    height: 442px;
+  }
+  .cart4{ 
+    width: 616px;
+    height: 241px;
+  }
 }
 @media (min-width:1600px){
   .header_container{
@@ -531,6 +813,9 @@ svg{
   .heder_link{
     font-size: 20px;
     line-height: 30px;
+  }
+  .hero{
+    margin-bottom: 180px;
   }
   .hero-container{
     width: 1338px;
@@ -566,5 +851,33 @@ svg{
     height: 100px;
     font-size: 36px;
     line-height: 54px;
+  }
+  .skils-h2{
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 60px;
+  }
+  .skils-container{
+    width: 1338px;
+  }
+  .list-skills{
+    grid-template-rows: 579px 338px;
+    gap: 10px;
+  }
+  .cart1{
+    width: 426px;
+    height: 947px;
+  }
+  .cart2{
+    width: 426px;
+    height: 579px;
+  }
+  .cart3{
+    width: 426px;
+    height: 579px;
+  }
+  .cart4{
+    width: 882px;
+    height: 338px;
   }
 }
